@@ -1,122 +1,63 @@
-<h1 align = "center"> Speech Recognition in Python </h1>
+# Python Speech Recognition
 
+<p align="center">
+A collection of simple Python scripts for performing speech-to-text conversion.
+</p>
 
-Python-Speech-Recognition
----------------------------
+---
 
-This repository of basic examples on performing Speech Recognitionin Python using Google Speech Recognition Engine.
+## 🧠 Features
 
+This project provides clear, easy-to-use examples for:
 
-The original article
--------------------------
+- 🎙️ **Real-time Recognition**: Transcribe audio directly from a microphone.  
+- 🎧 **Audio File Recognition**: Convert speech from short audio files into text.  
+- 📂 **Long Audio File Processing**: Transcribe long audio files by intelligently splitting them into smaller chunks.
 
-To see full article with explanation on source code from this repository **[Click here](https://kalebujordan.com/python-speech-recognition)**
+---
 
+## ⚙️ Getting Started
 
-Getting started 🔧
---------------------
-Firstly before we begin exploring the source code, you might wanna *clone* or *download* the repository
-just as shown below;
+Follow these instructions to get the project running on your local machine.
 
-```bash
-# Clone this repository
-$ git clone https://github.com/Kalebu/Python-Speech-Recognition-
+### 🔧 Prerequisites
 
-# Go into the repository
-$ cd Python-Speech-Recognition-
-```
+Make sure you have **Python 3** and **pip** installed on your system.
 
-## Dependancies
+### 🧩 Installation
 
-Now you would need to Install all the Dependecies to begin running
-playing the Examples 
+1. **Clone the repository to your local machine:**
 
-Linux users  
-----------
+    ```bash
+    git clone https://github.com/yuvanvishnupandi/speech-recognition_Python.git
+    ```
 
-```bash
- 
-$ pip3 install pydub
-$ pip3 install PyAudio
-$ pip3 install SpeechRecognition
-```
+2. **Navigate into the project directory:**
 
-Window users
------------
+    ```bash
+    cd speech-recognition_Python
+    ```
 
-```bash 
-$ pip install pydub
-$ pip install PyAudio
-$ pip install SpeechRecognition
-```
+3. **Install the required Python packages:**
 
-Once everything is cleary installed , you're now ready to run the above examples 
+    ```bash
+    pip install pydub PyAudio SpeechRecognition
+    ```
 
-Recognition From Microphone 
-----------------------------
+    > **Note:** Linux users may need to install `portaudio` separately:  
+    > `sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0`
 
+---
 
-The first Example *app.py* consist of python code to perform speech recognition 
-on sound that is directly fed from Microphone 
+## 🚀 How to Use
 
-To run the Example do the following
+Each script is designed to be run directly from your terminal.
 
-```bash 
-$ python app.py 
-    Adjusting noise 
-    Recording for 4 seconds
-    Done recording
-    Recognizing the text
-    Decoded Text : Python is awesome
-```
+### 1️⃣ Recognize Speech from a Microphone
 
-Recognition From Audio File 
------------------------------
+The `app.py` script listens to your microphone for a few seconds, captures the audio, and prints the transcribed text.
 
-The second Example *app_audio.py* consist of a python code to perform speech recognition from 
-sound loaded from local audio file 
-
-To run the Example do the following 
+**Run the script:**
 
 ```bash
-$ python3 app_audio.py 
-    Done recording
-    Recognizing the text
-    Decoded Text : python programming is the best of all by Jordan
-```
-
-Recognizing From Long Audio File 
------------------------------------
-
-Incase you have a long audio File, loading plus processing it, It takes a quite a while therefore 
-the best way is to break the long audio source from file into small chunks and then performing 
-speech Recognition on those chunks 
-
-The script *long_audio.py* consist of Python demo code just to that 
-
-To run the example do the Following 
-
-```bash 
-$ python3 app_audio.py 
-    Done recording
-    Recognizing the text
-    Decoded Text : python programming is the best of all by Jordan
-```
-
-Explore and build your own thing
----------------------------------
-
-Well Hope you had amazing time practicing Some Speech Recognition Now It's your turn to create something useful out of what you just learned.
-
-
-Give it a star 
---------------
-Did you find this information useful, then give it a star 
-
-
-Credits
------------
-All the credits to [kalebu](github.com/kalebu) 
-
-
-*The Only limits are the one you have set upon yourself @unkown*
+python app.py
