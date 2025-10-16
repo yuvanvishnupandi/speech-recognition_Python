@@ -1,8 +1,5 @@
 # Python Speech Recognition
 
-<p align="center">
-A collection of simple Python scripts for performing speech-to-text conversion.
-</p>
 
 ---
 
